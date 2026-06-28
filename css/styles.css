@@ -585,6 +585,56 @@ blockquote em {
   }
 }
 
+.faq {
+  padding: 49px 15px 60px 15px;
+}
+.faq h2 {
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #DBD0BE;
+  padding: 18px 0;
+  max-width: 700px;
+  margin: auto;
+}
+.faq-item:first-of-type {
+  border-top: 1px solid #DBD0BE;
+}
+.faq-item summary {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2em;
+  color: #233041;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.2em;
+  color: #354759;
+}
+.faq-item[open] summary::after {
+  content: "\2212";
+}
+.faq-item .faq-answer {
+  padding-top: 14px;
+}
+.faq-item .faq-answer p {
+  text-align: left;
+  margin: 0 0 12px 0;
+}
+.faq-item .faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
 .notifications {
   padding: 0 15px 70px 15px;
 }
