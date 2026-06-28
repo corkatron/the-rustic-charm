@@ -332,6 +332,7 @@ header {
   text-align: center;
   /*padding: 25px 20px 40px 20px;*/
   height: 180px;
+  position: relative;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -353,6 +354,33 @@ header img {
   header img {
     max-height: 70px;
   }
+}
+header .social {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  margin: 0;
+}
+header .social a {
+  display: inline-block;
+  width: 26px;
+  height: auto;
+  margin: auto 2px;
+}
+@media (max-width: 768px) {
+  header .social a {
+    width: 20px;
+  }
+}
+header .social a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: scale(1.2);
 }
 
 .hero {
